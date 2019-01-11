@@ -1,0 +1,11 @@
+<h1> Goal Details </h1>
+<p> {{ object.title }} </p>
+<p> {{ object.description }} </p>
+<p> Created on: {{ object.created }} </p>
+<p> Deadline Date : {{ object.deadline }}
+<br><br>
+<a href="/todo/update/{{ object.id }}/"> Update Goal </a>
+<br>
+<a href="/todo/delete/{{ object.id }}/"> Delete Goal </a>
+<br>
+<a href="/todo/">Go Back</a>

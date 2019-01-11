@@ -1,0 +1,7 @@
+<h2> Delete Goal </h2>
+    <form method="POST">{% csrf_token %}
+        <h2> Are you sure you want to delete {{ object.title }}
+        <input type="submit", value="yes" />
+        <br>
+        <a href="/todo/detail/{{ object.id }}/">NO..Cancel</a>
+    </form>

@@ -1,0 +1,6 @@
+    <h2> Create New goal </h2>
+    <form method="POST">{% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit", value="save" />
+    </form>
+    <a href="/todo/detail/{{ object.id }}/"> Go Back </a>
